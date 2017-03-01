@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JqueryConfirmatino</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <style type="text/css">
+		
+		.confirmationContainerOuter
+		{
+			    position: fixed;
+			    width: 100%;
+			    height: 100%;
+			    background: rgba(0, 0, 0, 0.58);
+			    top: 0px;
+			    left: 0px;
+			    z-index: 9999;
+			    display: flex;
+			    justify-content: center;
+		}
+
+		.confirmationContainerOuter > .confirmationContainerInner
+		{
+			background-color: white;
+		    position: relative;
+		    display: inline-block;
+		    align-self: center;
+		    padding: 10px;
+		    border: 2px solid white;
+		    border-radius: 5px;
+		    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);		    
+		}
+
+		.confirmationContainerOuter .confirmationFooter
+		{
+			text-align: center;
+    		padding: 10px;
+		}
+
+		.confirmationContainerOuter .confirmationTitle h4
+		{
+			margin: 0px;
+    		padding: 0px;
+    		font-family: monospace;
+		}
+
+		.confirmationContainerOuter hr
+		{
+			border-color: rgba(0, 0, 0, 0.05);
+		}
+
+		.confirmationContainerOuter .confirmationContainerInner .confirmationBody .confirmationIcon
+		{
+			margin-right: 5px;
+		}
+
+		.confirmationContainerOuter .confirmationBody .confirmationText
+		{
+			display: inline-block;
+		}
+
+		.confirmationContainerOuter .confirmationContainerInner .close
+		{
+			position: absolute;
+		    right: -12px;
+		    top: -14px;
+		    font-size: 23px;
+		    cursor: pointer;
+		}
+		
+		    
+
+	</style> -->
+</head>
+<body>
+
+	<h1>Hello World</h1>
+
+
+	<script type="text/javascript" src="./jquery_3.1.1.min.js"></script>
+	<script type="text/javascript" src="./JqueryConfirmation.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$.confirmation.init();
+			$.confirmation({
+
+				icon : {
+					iconClass : "fa fa-times-circle-o",
+					iconColor : "red",
+					iconSize : "20px"	
+				},
+
+				confimationTitle : "Item delete confirmation ?",
+				confirmationText : "Are you sure?",
+				okButton : {
+					text : "",
+					callback : function(){
+						alert('cancen buton clicked');
+					}
+				},
+				cancelButton : {
+					text : "",
+					callback : function(){
+						alert('cancen buton clicked');
+					}
+				}
+				
+			});
+
+			$.confirmation({
+
+				icon : {
+					iconClass : "fa fa-times-circle-o",
+					iconColor : "red",
+					iconSize : "20px"	
+				},
+
+				confimationTitle : "Item delete confirmation ?",
+				confirmationText : "Are you sure?",
+				okButton : {
+					text : "",
+					callback : function(){
+						alert('cancen buton clicked');
+					}
+				},
+				cancelButton : {
+					text : "",
+					callback : function(){
+						alert('cancen buton clicked');
+					}
+				}
+				
+			});
+
+
+
+			
+		});
+
+	</script>
+</body>
+</html>
